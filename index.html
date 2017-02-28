@@ -6,8 +6,14 @@
     <!-- Kommentare werden im Browser nicht angezeigt. -->
   </head>
   <body>
-    <object codebase="bin/VectorTo2D/"  classid="java:VectorApplet.class" 
-		codetype="application/x-java-applet" width="800" height="600">
-	</object>
+    <embed 
+	id="SomeName"
+	type="application/x-java-applet;version=1.6"
+	width="999" height="999" 
+	archive="vectorTo2D.jar"
+	code="VectorApplet.class"
+	codebase = "bin/vectorTo2D"
+	pluginspage="http://java.com/download/"
+	myParam="YourParams" />
   </body>
 </html>
