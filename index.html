@@ -2,18 +2,20 @@
 <html>
   <head>
     <title>Titel der Webseite</title>
+	<script src="http://www.java.com/js/deployJava.js"></script>
     <!-- weitere Kopfinformationen -->
     <!-- Kommentare werden im Browser nicht angezeigt. -->
   </head>
   <body>
-    <embed 
-	id="SomeName"
-	type="application/x-java-applet;version=1.6"
-	width="999" height="999" 
-	archive="vectorTo2D.jar"
-	code="VectorApplet.class"
-	codebase = "bin/vectorTo2D"
-	pluginspage="http://java.com/download/"
-	myParam="YourParams" />
+    <script>
+    var attributes = {codebase: 'bin/vectorTo2D/',
+                      code: 'vectorTo2D.VectorApplet.class',
+                      archive: 'vectorTo2D.jar',
+                      width: '800', 
+                      height: '600'};
+    var parameters = {java_arguments: '-Xmx256m'}; // customize per your needs
+    var version = '1.5'; // JDK version
+    deployJava.runApplet(attributes, parameters, version);
+</script>
   </body>
 </html>
