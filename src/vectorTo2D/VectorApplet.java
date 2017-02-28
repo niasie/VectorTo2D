@@ -7,7 +7,7 @@ import java.awt.List;
 import java.awt.event.*;
 import java.util.*;
 
-public class VectorApplet extends JFrame implements ActionListener, ChangeListener {
+public class VectorApplet extends JApplet implements ActionListener, ChangeListener {
 	Coordinatesystem canvas;
 	JButton beenden, hinzufuegen, loeschen;
 	JTextField tfX, tfY, tfZ;
@@ -18,9 +18,9 @@ public class VectorApplet extends JFrame implements ActionListener, ChangeListen
 	
 	public VectorApplet() {
 		this.setSize(800, 600);
-		this.setTitle("Vektoren in 2D Darstellung");
+		// this.setTitle("Vektoren in 2D Darstellung");
 		this.setLayout(null);
-		this.setResizable(false);
+		// this.setResizable(false);
 		
 		canvas = new Coordinatesystem();
 		canvas.setBounds(10, 10, 600, 550);
