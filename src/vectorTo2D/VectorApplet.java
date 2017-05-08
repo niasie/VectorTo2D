@@ -289,7 +289,7 @@ public class VectorApplet extends JFrame implements ActionListener, ChangeListen
 		
 		if (ae.getSource() == lineHinzufuegen) {
 			if (!tfLineX1.getText().isEmpty() && !tfLineX2.getText().isEmpty() && !tfLineX3.getText().isEmpty()) {
-				Line l = new Line(new Vector3Di(Integer.parseInt(tfLineX1.getText()), Integer.parseInt(tfLineX2.getText()), Integer.parseInt(tfLineX3.getText())), new Vector3Di(Integer.parseInt(tfLineV1.getText()), Integer.parseInt(tfLineV2.getText()), Integer.parseInt(tfLineV3.getText())));
+				Line l = new Line(new Vector3Di(Integer.parseInt(tfLineX1.getText()) * 100, Integer.parseInt(tfLineX2.getText()) * 100, Integer.parseInt(tfLineX3.getText()) * 100), new Vector3Di(Integer.parseInt(tfLineV1.getText()) * 100, Integer.parseInt(tfLineV2.getText()) * 100, Integer.parseInt(tfLineV3.getText()) * 100));
 				lines.add(l);
 				canvas.setLines(lines);
 				listLines.add(l.toString());

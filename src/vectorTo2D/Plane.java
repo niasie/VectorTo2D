@@ -48,6 +48,6 @@ public class Plane {
 	}
 	
 	public String toString() {
-		return n.getX1() + "*x1+" + n.getX2() + "*x2+" + n.getX3() + "*x3=" + d;
+		return "E: " + n.getX1() + "*x1+" + n.getX2() + "*x2+" + n.getX3() + "*x3=" + d;
 	}
 }

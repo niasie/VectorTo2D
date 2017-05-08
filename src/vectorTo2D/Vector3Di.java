@@ -58,6 +58,6 @@ public class Vector3Di {
 	}
 	
 	public String toString() {
-		return "(" + x1 + ";" + x2 + ";" + x3 + ")";
+		return "P(" + x1 + ";" + x2 + ";" + x3 + ")";
 	}
 }

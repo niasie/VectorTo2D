@@ -17,6 +17,6 @@ public class Line {
 	}
 	
 	public String toString() {
-		return "p:x=" + point.toString() + "+s*" + direction.toString();
+		return "g:x=" + point.toString() + "+s*" + direction.toString();
 	}
 }
